@@ -25,7 +25,25 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'CS8711!'
+    print("Welcome to Cloud Lab!\n")
+    print("Enter two numbers to perform calculation\n")
+    print("Enter number 1")
+    a=int(input())
+    print("Enter number 2")
+    b=int(input())
+    print("Enter an option below\n1.Add\n2.Subtract\3.Multiply\n4.Divide\n")
+    opt=int(input())
+    if(opt==1):
+        return a+b
+    elif(opt==2):
+        return a-b
+    elif(opt==3):
+        return a*b
+    else:
+        return a/b
+    
+    
+    #return 'CS8711!'
 
 
 if __name__ == '__main__':

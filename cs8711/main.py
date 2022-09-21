@@ -25,7 +25,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return "Welcome to Cloud Lab!"
+    return "***Hello World***"
 #     print("Enter two numbers to perform calculation\n")
 #     print("Enter number 1")
 #     a=int(input())
